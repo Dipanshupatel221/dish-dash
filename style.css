@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,100;1,200;1,400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  overflow-x: hidden;
+  min-height: 100vh;
+  color: white;
+  position: relative;
+}
+
+body::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2));
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* Styling Nav For  */
+.front-content .nav {
+  position: absolute;
+  background: transparent;
+  top: 10px;
+  left: 50px;
+  font-weight: 400;
+  font-family: 'Poppins', sans-serif;
+}
+
+.front-content .nav h1 {
+  color: #9c27b0;
+  text-shadow: 0 0 6px rgba(156, 39, 176, 0.6), 0 0 12px rgba(156, 39, 176, 0.4), 0 0 18px rgba(156, 39, 176, 0.3);
+  font-size: 30px;
+  font-weight: 100;
+}
+
+.front-content .content {
+  position: absolute;
+  width: 50%;
+  height: 200px;
+  background: transparent;
+  top: 36%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: auto;
+}
+
+.front-content .content h1 {
+  font-family: monospace;
+  text-align: center;
+  font-size: 50px;
+}
+
+.front-content .content p {
+  font-size: 30px;
+  text-align: center;
+  margin-top: 25px;
+  color: #cf64ea;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-bottom: 25px;
+}
+
+.buttons {
+  text-align: center;
+}
+
+.buttons a {
+  text-decoration: none;
+}
+
+.buttons .btn {
+  font-family: monospace;
+  font-size: 22px;
+  padding: 10px 57px;
+  text-align: center;
+  color: white;
+  background: #8037DB;
+  border-radius: 27px;
+  border: 2px solid #8037DB;
+  outline: none;
+  cursor: pointer;
+  transition: .4s linear;
+}
+
+.buttons .btn:hover {
+  color: white;
+  background: #6610f2;
+  border: 2px solid #6610f2;
+}
+
+/* Snow Efffect */
+.front-content .snowflake {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: linear-gradient(white, white);
+  border-radius: 50%;
+  filter: drop-shadow(0 0 10px white);
+}
+
+/* new creation */
+.web-container {
+  position: absolute;
+  width: 80%; /* Container takes up 80% of the screen width */
+  left: 10%; /* Centering the container */
+  bottom: 5%;
+  display: flex;
+  justify-content: space-between; /* Adjust spacing between cards */
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between; /* Adjust spacing between cards */
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 40%; /* Each card takes up 40% of the screen width */
+  max-width: none; /* Remove the max-width to allow the cards to expand */
+  text-align: center;
+}
+
+.left-container,
+.right-container {
+  width: 45%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.card img {
+  width: 300px;
+  display: block;
+  margin: 0 auto;
+}
+
+
+.right-container h1{
+    padding-top: 20px;
+}
+
+.right-container p{
+    margin-top: 17px;
+    padding: 0 78px;
+    font-size: 1.1rem;
+}
+
+.left-container h1{
+    padding-top: 20px;
+}
+
+.left-container p{
+    margin-top: 20px;
+    font-size: 1.1rem;
+    padding: 0 78px;
+}
+
+.buttons {
+  text-align: center;
+}
+
+.buttons a {
+  text-decoration: none;
+}
+
+.buttons .btn {
+  font-family: monospace;
+  font-size: 1.1rem;
+  padding: 15px 35px;
+  text-align: center;
+  color: white;
+  background: #8037DB;
+  border-radius: 27px;
+  border: 2px solid #8037DB;
+  outline: none;
+  cursor: pointer;
+  transition: .4s linear;
+  margin-top: 20px; /* Add margin top to the button */
+}
+
+.buttons .btn:hover {
+  color: #9c27b0; /* Change text color to the glowing color */
+  background: #000;
+  border: 2px solid #000;
+  text-shadow: 0 0 6px rgba(156, 39, 176, 0.6), 0 0 12px rgba(156, 39, 176, 0.4), 0 0 18px rgba(156, 39, 176, 0.3); /* Apply the glowing effect */
+}
+
+
+
+
+  
+
+
+/* MAKING THE WEBSITE RESPONSIVE */
+@media only screen and (max-width: 1300px) {
+  .front-content .content{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1028px) {
+    body{
+        height: 120vh;
+    }
+}
+
+@media only screen and (max-width: 1028px) {
+    body{
+        height: 120vh;
+    }
+
+    .card img{
+      width: 100%;
+    }
+
+    .left-container p{
+      padding: 0;
+    }
+
+    .right-container p{
+      padding: 0;
+    }
+}
+
+@media only screen and (max-width: 807px) {
+      .left-container h1{
+        font-size: 1.6rem;
+      }
+      
+      .right-container h1 {
+        font-size: 1.6rem;
+      }
+}
+
+@media only screen and (max-width: 691px) {
+
+  body{
+    height: 150vh;
+  }
+
+  .front-content .content h1{
+    font-size: 40px;
+  }
+
+  .front-content .content{
+    top: 20%;
+  }
+      
+  .card-container{
+    flex-direction: column;
+    top: 20%;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .left-container, .right-container{
+    width: 80%;
+  }
+
+  .card img{
+    width: 200px;
+  }
+
+}
+
+@media only screen and (max-width: 530px) {
+  .front-content .content h1{
+    font-size: 32px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .front-content .content h1{
+    font-size: 25px;
+  }
+
+  .left-container, .right-container{
+    width: 90%;
+  }
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="You'll get many weather details in this app like temperature in celsius, weather conditions, location, feels like, and humidity. You can also listen songs according to the weather."
+    />
+    <title>DishDash: Speedy Recipes & Delicious Blog Dives</title>
+    <link rel="icon" type="image/x-icon" href="img/f1.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="front-content">
+      <div class="nav">
+        <h1>Dish Dash</h1>
+      </div>
+
+      <div class="content">
+        <h1><span id="element"></span></h1>
+      </div>
+
+      <div class="web-container">
+        <div class="card-container">
+          <div class="left-container card">
+            <img src="food1.jpg" alt="" />
+            <h1>Search For Recipes</h1>
+            <p>
+              Discover endless culinary possibilities with our intuitive recipe
+              search app, bringing flavors from around the world to your
+              fingertips
+            </p>
+            <div class="buttons">
+              <a
+                href="https://dipanshupatel221.github.io/Hackbyte-searchrecipe/"
+                ><button class="btn">Visit Website</button></a
+              >
+            </div>
+          </div>
+          <div class="right-container card">
+            <img src="food2.jpg" alt="" />
+            <h1>Cooking Blog</h1>
+            <p>
+              Embark on a culinary journey through our recipe blog, where each
+              post is a delectable adventure waiting to be savored.
+            </p>
+            <div class="buttons">
+              <a href="http://localhost:3000/"
+                ><button class="btn">Visit Website</button></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="snow" count="200"></div>
+    </div>
+
+    <script src="./pure-snow.js" defer></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Welcome To Our Website."],
+        typeSpeed: 80,
+        cursorChar: "|", // Set the cursor character to a vertical bar
+      });
+
+      // Add custom CSS to change the cursor color
+      var style = document.createElement("style");
+      style.innerHTML = ".typed-cursor { color: #cf64ea; }";
+      document.head.appendChild(style);
+    </script>
+  </body>
+</html>
